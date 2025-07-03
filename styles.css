@@ -1,0 +1,234 @@
+/* Base styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #2f2f2f;
+    background-color: #f7f6f1;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header and Hero */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #5f8d4e; /* Matcha Green */
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #5f8d4e;
+}
+
+.hero {
+    text-align: center;
+    margin: 4rem 0 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero .highlight {
+    color: #5f8d4e;
+}
+
+.hero-links {
+    margin-top: 1rem;
+}
+
+.hero-links a {
+    margin: 0 0.7rem;
+    font-weight: bold;
+    color: #5f8d4e;
+    text-decoration: none;
+}
+
+.hero-links .active-link {
+    color: #3e3e3e;
+}
+
+/* Section Headings */
+h2 {
+    color: #5f8d4e;
+    margin: 2.5rem 0 1rem;
+    font-size: 1.8rem;
+}
+
+/* Experience Section */
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* space between items */
+}
+
+.experience-item {
+    padding: 1.5rem;
+    border-radius: 12px; /* rounded corners */
+    background-color: rgba(95, 141, 78, 0.05); /* subtle matcha background */
+    transition: background-color 0.3s ease;
+}
+
+.experience-item:hover {
+    background-color: rgba(95, 141, 78, 0.1); /* slightly darker on hover */
+}
+
+body.dark .experience-item {
+    background-color: rgba(163, 197, 133, 0.05);
+}
+
+body.dark .experience-item:hover {
+    background-color: rgba(163, 197, 133, 0.1);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.experience-header h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.dates {
+    font-size: 0.95rem;
+    color: #8b7e74;
+}
+
+.summary {
+    margin: 0.5rem 0;
+}
+
+.see-more {
+    background: none;
+    border: none;
+    color: #5f8d4e;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+body.dark .see-more {
+    color: #a3c585;
+}
+
+.details {
+    display: none;
+    margin-top: 0.75rem;
+}
+
+/* Volunteering Section */
+.volunteering-item {
+    padding: 1.2rem;
+    border-radius: 12px;
+    background-color: rgba(95, 141, 78, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+.volunteering-item:hover {
+    background-color: rgba(95, 141, 78, 0.1);
+}
+
+body.dark .volunteering-item {
+    background-color: rgba(163, 197, 133, 0.05);
+}
+
+body.dark .volunteering-item:hover {
+    background-color: rgba(163, 197, 133, 0.1);
+}
+
+.volunteering-item h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.volunteering-item .dates {
+    display: block;
+    margin-top: 0.2rem;
+    font-size: 0.9rem;
+    color: #8b7e74;
+}
+
+/* Projects Section */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    border-radius: 12px;
+    background-color: rgba(95, 141, 78, 0.05);
+    padding: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.project-card:hover {
+    background-color: rgba(95, 141, 78, 0.1);
+}
+
+body.dark .project-card {
+    background-color: rgba(163, 197, 133, 0.05);
+}
+
+body.dark .project-card:hover {
+    background-color: rgba(163, 197, 133, 0.1);
+}
+
+/* Skills and Awards */
+.skills-list h3,
+.awards h2 {
+    margin-top: 1rem;
+}
+
+.skills-list p,
+.awards ul {
+    margin-left: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 3rem 0 1rem;
+    color: #8b7e74;
+    font-size: 0.9rem;
+}
+
+/* Dark Mode Base */
+body.dark {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark header .logo {
+    color: #a3c585;
+}
+
+body.dark #theme-toggle {
+    color: #a3c585;
+}
+
+body.dark .hero-links a {
+    color: #a3c585;
+}
+
+body.dark h2,
+body.dark .skills-list h3 {
+    color: #a3c585;
+}
